@@ -1,0 +1,29 @@
+.sessoes {
+    padding-inline: 24px;
+}
+.dois {
+    color: #293845;
+    font-family: 'Roboto';
+    font-size: 20px;
+    margin-bottom: 22px;
+    margin-top: 22px;
+}
+.tres {
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-size: 18px;
+}
+.horarios {    
+    display: flex;
+    flex-wrap: wrap;
+}
+.horario {
+    width: 83px;
+    height: 43px;
+    background-color:  #E8833A;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+}
