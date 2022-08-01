@@ -10,21 +10,28 @@ export default function Filmes () {
     
     useEffect( ()=> {
         const promise = axios.get("https://mock-api.driven.com.br/api/v7/cineflex/movies");
-        promise.then(resposta => {setFilmes(resposta.data);}
-        );}, [])
+        promise.then(resposta => { setFilmes(resposta.data) } );
+        
+        promise.catch(erro => {alert("Deu ruim!")});
+
+        }, []);
+
+        
+        const listaFilmes = filmes.map(item => 
+            <Link to={`/filme/${item.id}`}>
+            <div className="filme" > 
+            <img src={item.posterURL} alt={item.title} /> 
+            </div>  
+            </Link>)
+
         
     return (
         <>
         <Info>Selecione o filme</Info>
-        <div className="caixa-filmes">
-            
-			{filmes.map(item => 
-            <Link to={`/filme/${item.id}`}>
-            <div className="filme"> 
-            <img src={item.posterURL} alt="" /> 
-            </div>  
-            </Link>)}
+        <div className="caixa-filmes">            
+			{listaFilmes}
 		</div>
+                     
         </>
     )
 }

@@ -1,4 +1,5 @@
 import ReactDOM from "react-dom";
+import "./reset.css"
 import App from "./Componentes/App";
 
 

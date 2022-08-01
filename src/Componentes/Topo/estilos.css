@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 body {
     padding-top: 67px;
+    padding-bottom: 117px;
 }
 .topo {
     background-color: #C3CFD9;
@@ -13,8 +14,11 @@ body {
     top: 0;
     left: 0;
 }
+    
 h1 {
     color: #E8833A;
     font-family: 'Roboto';
-    font-size: 34px;
+    font-size: 34px;    
+    text-decoration: none;
+    
 }

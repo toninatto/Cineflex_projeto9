@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.root {
+    position: relative;
+}
+.todos-assentos{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 24px;
+    box-sizing: border-box;    
+}
+.assento {
+    width: 26px;
+    height: 26px;
+    background-color: #C3CFD9;
+    border-radius: 12px;
+    border-color: #808F9D;
+    border-style: solid;
+    border-width: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 3.5px;
+    margin-bottom: 18px;
+    box-sizing: border-box;
+}
+.assento span {
+    font-family: 'Roboto';
+    font-size: 11px;
+    font-weight: 400;
+    color: #000000;
+}
+.legenda {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;   
+    margin-right: 24px;
+    box-sizing: border-box;
+    padding-inline: 55px;
+}
+.parte {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+    box-sizing: border-box;
+}
+.parte span {
+    font-family: 'Roboto';
+    font-size: 13px;
+    color: #4E5A65;
+}
+.selecionado {
+    background: #8DD7CF;
+    border: 1px solid #1AAE9E;
+}
+.indisponivel {
+    background: #FBE192;
+    border: 1px solid #F7C52B;
+}
